@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "wataryooou",
-  "repository": { "type": "git", "url": "https://github.com/wataryooou/nextjs-cypress.git" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wataryooou/nextjs-cypress.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "dependencies": {
     "date-fns": "^2.11.1",
@@ -19,6 +24,7 @@
     "remark-html": "^12.0.0"
   },
   "devDependencies": {
+    "cypress": "^6.0.0",
     "prettier": "^2.2.1"
   }
 }
