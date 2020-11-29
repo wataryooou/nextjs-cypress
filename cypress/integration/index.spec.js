@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context("/", () => {
+context("/ - Home", () => {
   beforeEach(() => {
     cy.visit("/");
   });
