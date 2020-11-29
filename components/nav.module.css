@@ -1,0 +1,28 @@
+.nav {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  background-color: #111;
+}
+
+.nav ul {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav li {
+  display: table-cell;
+  min-width: 1rem;
+  padding: 0 2rem;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 0.8rem;
+}
+.nav a:hover {
+  color: #999;
+}
