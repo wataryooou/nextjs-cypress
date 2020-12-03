@@ -16,9 +16,9 @@ export default function About({ title }) {
       <div className={utilStyles.container}>
         <div className={utilStyles.center}>
           <div>ここでは、typeしたものがそのまま表示されることを確認する。</div>
-          <input onChange={onChange}></input>
+          <input onChange={onChange} data-cy="input"></input>
           <div>
-            output: <span>{typeText}</span>
+            output: <span data-cy="output">{typeText}</span>
           </div>
         </div>
       </div>
