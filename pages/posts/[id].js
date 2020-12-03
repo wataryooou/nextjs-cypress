@@ -8,7 +8,7 @@ export default function Post({ postData }) {
     <>
       <Top title={postData.title} />
 
-      <div className={utilStyles.container}>
+      <div className={utilStyles.container} data-cy="blogItem">
         <article>
           <h1 className={utilStyles.headingXl}>{postData.title}</h1>
           <div className={utilStyles.lightText}>

@@ -16,7 +16,7 @@ export default function Posts({ title, allPostsData }) {
             {allPostsData.map(({ id, date, title }) => (
               <li className={utilStyles.listItem} key={id}>
                 <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
+                  <a data-cy="blog">{title}</a>
                 </Link>
                 <br />
                 <small className={utilStyles.lightText}>

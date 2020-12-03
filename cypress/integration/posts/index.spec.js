@@ -12,4 +12,9 @@ context("/posts - ブログ一覧", () => {
   it("ページが表示されている", () => {
     cy.get("h2").contains("Blog");
   });
+
+  it("ブログが表示できている", () => {
+    cy.get("[data-cy=blog]").first().click();
+    cy.get("[data-cy=blogItem]");
+  });
 });
