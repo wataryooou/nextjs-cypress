@@ -7,7 +7,7 @@ export default function Home({ title }) {
       <Top title={title} />
 
       <div className={utilStyles.container}>
-        <p className={utilStyles.center}>Welcome to page!</p>
+        <p className={utilStyles.center} data-cy="welcome">Welcome to page!</p>
       </div>
     </>
   );

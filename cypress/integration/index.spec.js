@@ -5,12 +5,9 @@ context("/ - Home", () => {
     cy.visit("/");
   });
 
-  it("アクセスしたURLがあっている", () => {
-    cy.location("pathname", { timeout: 10000 }).should("include", "/");
-  });
-
   it("ページが表示されている", () => {
-    cy.get("p").contains("Welcome to page!");
+    cy.location("pathname", { timeout: 10000 }).should("include", "/");
+    cy.get("[data-cy=welcome]").contains("Welcome to page!");
   });
 
   it("全てのページに遷移できる", () => {
